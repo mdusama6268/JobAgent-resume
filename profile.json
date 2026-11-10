@@ -1,0 +1,81 @@
+{
+  "personal": {
+    "first_name": "Mohd",
+    "last_name": "Huzefa",
+    "full_name": "Mohd Huzefa",
+    "email": "mdhzfa@gmail.com",
+    "phone": "+91 6268643512",
+    "resume_path": "G:\\JobAgent\\Mohd_Huzefa_Resume.pdf",
+    "location": {
+      "city": "Bhopal",
+      "state": "Madhya Pradesh",
+      "country": "India"
+    },
+    "github": "https://github.com/mdusama688",
+    "linkedin": "https://linkedin.com/in/mdhzfa",
+    "portfolio": "https://gharjodo.vercel.app/",
+    "portfolio_name": "GharJodo - Broker Ki Smart Digital Diary"
+  },
+  "target_roles": [
+    "AI Workflow Specialist",
+    "Operations Lead",
+    "Product Manager",
+    "Program Manager",
+    "Operations & Tech Execution Manager"
+  ],
+  "target_regions": [
+    "Europe",
+    "GCC",
+    "India"
+  ],
+  "education": {
+    "university": "Technocrats Institute of Technology, Bhopal",
+    "degree": "Bachelor of Technology (B.Tech)",
+    "major": "Mechanical Engineering",
+    "graduation_year": "2018"
+  },
+  "experience": {
+    "total_years": "8+",
+    "current_role": "Operations & Tech Execution Lead / Assistant Program Manager",
+    "current_company": "Zomato Ltd.",
+    "roles": [
+      {
+        "company": "Zomato Ltd.",
+        "title": "Assistant Program Manager / Operations Lead",
+        "start_date": "2018",
+        "end_date": "Present",
+        "location": "India",
+        "description": "Led operations and tech execution at Zomato since 2018. Spearheaded the 'Food on Trains' initiative, successfully scaling operations across 200+ railway stations in collaboration with IRCTC. Managed vendor operations, P&L, cross-functional engineering and operational alignment, and process automation."
+      },
+      {
+        "company": "GharJodo",
+        "title": "Founder & Creator",
+        "start_date": "2026",
+        "end_date": "Present",
+        "location": "India",
+        "project_url": "https://gharjodo.vercel.app/",
+        "description": "Creator of GharJodo (Broker Ki Smart Digital Diary). Architected and developed the B2B real estate CRM platform, currently deployed for pilot testing in 2026 with local brokers to automate property inventory management and WhatsApp leads."
+      }
+    ]
+  },
+  "skills": [
+    "AI & Workflow Automation",
+    "Program & Project Management",
+    "Operations Leadership",
+    "Cross-Functional Tech Execution",
+    "Process Automation (Python, Playwright)",
+    "P&L & Cost Optimization",
+    "Vendor & Partner Management",
+    "Regional Operations Scaling"
+  ],
+  "preferences": {
+    "work_authorization": "Yes",
+    "requires_sponsorship": "No",
+    "relocation": "Yes",
+    "remote_preference": "Remote / Hybrid / Relocation Sponsored",
+    "notice_period": "30 days",
+    "ai_policy_agreement": "Yes",
+    "hear_about_us": "LinkedIn"
+  },
+  "professional_summary": "High-impact Operations and Program Management professional with 8+ years of experience leading cross-functional tech execution, scaling businesses, and optimizing P&L. Spearheaded Zomato's Food on Trains initiative across 200+ stations with IRCTC and built GharJodo (deployed for pilot testing in 2026). Skilled in business operations, AI workflow automation, process automation with Python/Playwright, and cross-functional leadership."
+}

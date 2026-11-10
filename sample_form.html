@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Application: Senior Operations & Tech Execution Lead - Apex Logistics & Tech</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: #f3f4f6;
+            margin: 0;
+            padding: 30px;
+            color: #1f2937;
+        }
+        .container {
+            max-width: 760px;
+            margin: 0 auto;
+            background: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+            padding: 36px 44px;
+        }
+        h1 {
+            font-size: 24px;
+            color: #111827;
+            margin-bottom: 6px;
+        }
+        p.subtitle {
+            color: #6b7280;
+            font-size: 14px;
+            margin-bottom: 24px;
+        }
+        .form-section {
+            margin-bottom: 28px;
+        }
+        .form-section h2 {
+            font-size: 16px;
+            border-bottom: 1px solid #e5e7eb;
+            padding-bottom: 8px;
+            margin-bottom: 16px;
+            color: #374151;
+        }
+        .form-group {
+            margin-bottom: 16px;
+        }
+        .form-row {
+            display: flex;
+            gap: 16px;
+        }
+        .form-row .form-group {
+            flex: 1;
+        }
+        label {
+            display: block;
+            font-weight: 500;
+            font-size: 14px;
+            margin-bottom: 6px;
+            color: #374151;
+        }
+        input[type="text"],
+        input[type="email"],
+        input[type="tel"],
+        input[type="number"],
+        input[type="url"],
+        select,
+        textarea {
+            width: 100%;
+            padding: 10px 12px;
+            border: 1px solid #d1d5db;
+            border-radius: 6px;
+            font-size: 14px;
+            box-sizing: border-box;
+            outline: none;
+            transition: border-color 0.2s, box-shadow 0.2s;
+        }
+        input:focus, select:focus, textarea:focus {
+            border-color: #3b82f6;
+            box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.2);
+        }
+        textarea {
+            resize: vertical;
+            height: 110px;
+        }
+        .file-upload-box {
+            border: 2px dashed #d1d5db;
+            border-radius: 6px;
+            padding: 16px;
+            background-color: #f9fafb;
+            text-align: center;
+        }
+        .file-upload-box input[type="file"] {
+            display: block;
+            margin: 0 auto;
+            font-size: 13px;
+        }
+        button.submit-btn {
+            background-color: #2563eb;
+            color: white;
+            font-weight: 600;
+            padding: 12px 24px;
+            border: none;
+            border-radius: 6px;
+            font-size: 15px;
+            cursor: pointer;
+            width: 100%;
+            margin-top: 16px;
+            transition: background-color 0.2s;
+        }
+        button.submit-btn:hover {
+            background-color: #1d4ed8;
+        }
+        #success-message {
+            display: none;
+            padding: 16px;
+            background-color: #d1fae5;
+            color: #065f46;
+            border-radius: 6px;
+            font-weight: 500;
+            margin-top: 20px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Apply: Senior Operations & Tech Execution Lead</h1>
+        <p class="subtitle">Greenhouse / Lever ATS Simulation &bull; Remote / Hybrid</p>
+
+        <form id="job-application-form" onsubmit="event.preventDefault(); document.getElementById('success-message').style.display='block';">
+            
+            <!-- 1. Resume File Upload Section (Greenhouse/Lever standard) -->
+            <div class="form-section">
+                <h2>1. Resume / CV Attachment *</h2>
+                <div class="form-group file-upload-box">
+                    <label for="resume">Attach Resume / CV (.pdf, .doc, .docx) *</label>
+                    <input type="file" id="resume" name="resume" accept=".pdf,.doc,.docx" required>
+                </div>
+            </div>
+
+            <!-- 2. Personal Information -->
+            <div class="form-section">
+                <h2>2. Personal Information</h2>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="first_name">First Name *</label>
+                        <input type="text" id="first_name" name="first_name" placeholder="e.g. John" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="last_name">Last Name *</label>
+                        <input type="text" id="last_name" name="last_name" placeholder="e.g. Doe" required>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="email">Email Address *</label>
+                        <input type="email" id="email" name="email" placeholder="name@example.com" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone Number *</label>
+                        <input type="tel" id="phone" name="phone" placeholder="+1 234 567 8900" required>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="location">Current City / Location</label>
+                        <input type="text" id="location" name="location" placeholder="e.g. London, UK">
+                    </div>
+                    <div class="form-group">
+                        <label for="linkedin">LinkedIn Profile URL</label>
+                        <input type="url" id="linkedin" name="linkedin" placeholder="https://linkedin.com/in/username">
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="github">GitHub Profile URL</label>
+                        <input type="url" id="github" name="github" placeholder="https://github.com/username">
+                    </div>
+                    <div class="form-group">
+                        <label for="portfolio">Portfolio / Live Project URL</label>
+                        <input type="url" id="portfolio" name="portfolio" placeholder="https://yourproject.vercel.app">
+                    </div>
+                </div>
+            </div>
+
+            <!-- 3. Education & Professional Background -->
+            <div class="form-section">
+                <h2>3. Education & Professional Background</h2>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="university">University / College Attended *</label>
+                        <input type="text" id="university" name="university" placeholder="Name of institution" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="degree">Degree / Major</label>
+                        <input type="text" id="degree" name="degree" placeholder="e.g. B.Tech Mechanical Engineering">
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="experience_years">Total Years of Professional Experience *</label>
+                        <select id="experience_years" name="experience_years" required>
+                            <option value="">-- Please Select --</option>
+                            <option value="0-1">0 - 1 years</option>
+                            <option value="1-3">1 - 3 years</option>
+                            <option value="3-5">3 - 5 years</option>
+                            <option value="5-8">5 - 8 years</option>
+                            <option value="8+">8+ years</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="current_company">Current Employer</label>
+                        <input type="text" id="current_company" name="current_company" placeholder="Current company">
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="current_role">Current Job Title</label>
+                    <input type="text" id="current_role" name="current_role" placeholder="e.g. Operations & Tech Execution Lead">
+                </div>
+            </div>
+
+            <!-- 4. ATS Standard Compliance & Preference Dropdowns -->
+            <div class="form-section">
+                <h2>4. Work Authorization & Compliance Dropdowns</h2>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="work_authorization">Are you legally authorized to work in our target locations? *</label>
+                        <select id="work_authorization" name="work_authorization" required>
+                            <option value="">-- Select an option --</option>
+                            <option value="Yes">Yes</option>
+                            <option value="No">No</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="visa_sponsorship">Will you now or in the future require visa sponsorship? *</label>
+                        <select id="visa_sponsorship" name="visa_sponsorship" required>
+                            <option value="">-- Select an option --</option>
+                            <option value="Yes">Yes</option>
+                            <option value="No">No</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="relocation_preference">Are you open to hybrid work or relocation? *</label>
+                        <select id="relocation_preference" name="relocation_preference" required>
+                            <option value="">-- Select an option --</option>
+                            <option value="Yes">Yes</option>
+                            <option value="No">No</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="ai_evaluation_policy">Do you agree to our AI & automation workflow evaluation policy? *</label>
+                        <select id="ai_evaluation_policy" name="ai_evaluation_policy" required>
+                            <option value="">-- Select an option --</option>
+                            <option value="Yes">Yes</option>
+                            <option value="No">No</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="referral_source">How did you hear about this opportunity? *</label>
+                    <select id="referral_source" name="referral_source" required>
+                        <option value="">-- Select an option --</option>
+                        <option value="LinkedIn">LinkedIn</option>
+                        <option value="Company Website">Company Website</option>
+                        <option value="Referral">Referral</option>
+                        <option value="Other">Other</option>
+                    </select>
+                </div>
+            </div>
+
+            <!-- 5. Smart Long-Form Textarea Questions (Ollama 200-400 words) -->
+            <div class="form-section">
+                <h2>5. Role-Specific Application Questions</h2>
+                <div class="form-group">
+                    <label for="why_company">Why are you interested in joining our team and what unique strengths do you bring? *</label>
+                    <textarea id="why_company" name="why_company" placeholder="Please elaborate on your fit and motivations..." required></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label for="scaling_experience">Describe a major operational initiative you scaled from scratch and your technical execution approach: *</label>
+                    <textarea id="scaling_experience" name="scaling_experience" placeholder="Detail your impact, scope, and key metrics..." required></textarea>
+                </div>
+            </div>
+
+            <button type="submit" class="submit-btn" id="submit-application">Submit Application</button>
+            <div id="success-message">Application & Resume Submitted Successfully!</div>
+        </form>
+    </div>
+</body>
+</html>
